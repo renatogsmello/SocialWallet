@@ -25,21 +25,21 @@
                 </div>
             </nav>
             <ul id="slide-out" class="sidenav">
-    <li><div class="user-view">
-      <div class="background">
-        <img src="images/office.jpg">
-      </div>
-      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-      <a href="#name"><span class="white-text name">John Doe</span></a>
-      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-    </div></li>
-    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-    <li><a href="#!">Second Link</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="subheader">Subheader</a></li>
-    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-  </ul>
-  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <li><div class="user-view">
+                  <div class="background">
+                    <img src="images/office.jpg">
+                  </div>
+                  <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                  <a href="#name"><span class="white-text name">John Doe</span></a>
+                  <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div></li>
+                <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                <li><a href="#!">Second Link</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="subheader">Subheader</a></li>
+                <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+              </ul>
+              <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </header>
         <div class="section no-pad-bot" id="index-banner">
             <div class="container">
@@ -72,22 +72,14 @@
         </div>
 
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
+          <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Patrimônio</span>
+                    <canvas id="patrimonioChart"></canvas>
+                </div>
+            </div>
         </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
       </div>
 
     </div>
@@ -103,24 +95,7 @@
 
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
+       
       </div>
     </div>
     <div class="footer-copyright">
@@ -135,8 +110,11 @@
         <script src="dist/assets/js/bin/materialize.min.js"></script>
         <script src="dist/assets/js/bin/Chart.min.js"></script>
         <script src="dist/assets/js/bin/charts/rentabilidade_chart.js"></script>
+        <script src="dist/assets/js/bin/charts/patrimonio_chart.js"></script>
+        
         <script>
             var elem = document.querySelector('.sidenav');
+            var instance = M.Sidenav.getInstance(elem);
             var instance = M.Sidenav.init(elem, options);
         </script>
         
